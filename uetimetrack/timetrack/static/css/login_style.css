@@ -1,0 +1,14 @@
+body {
+    background-color: purple;
+}
+
+#loginBlock {
+    margin: auto;
+    background-color: white;
+    width: 40%;
+    border-radius: 25px;
+}
+
+#mainTitle {
+    text-align: center;
+}

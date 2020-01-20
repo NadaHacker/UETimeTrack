@@ -1,0 +1,29 @@
+.sidebar-nav {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+    background-color: white;
+    border-radius: 25px;
+    width: 150px;
+}
+
+.sidebar-item {
+    margin-left: 20px;
+    color:black;
+}
+
+body {
+    background-color: purple;
+}
+
+#header_block {
+    margin: auto;
+    background-color: white;
+    width: 40%;
+    border-radius: 25px;
+    margin-top:20px;
+}
+
+#mainTitle {
+    text-align: center;
+}
