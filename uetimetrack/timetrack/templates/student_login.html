@@ -1,0 +1,19 @@
+{% extends "base_generic_main.html" %}
+
+{% block sidebar %}
+    <ul class="sidebar-nav">
+        <li><a class="sidebar-item" href="{% url 'index' %}">Home</a></li>
+        <li><a class="sidebar-item" href="/hello/">Submit Entry</a></li>
+        <li><a class="sidebar-item" href="/hello/">Your Entries</a></li>
+        {% if user.is_authenticated %}
+            <li><a class="sidebar-item" href="{% url 'logout'%}">Logout</a></li>
+        {% else %}
+            <li><a class="sidebar-item" href="{% url 'login'%}?next={{request.path}}">Login</a></li>
+        {% endif %}
+    </ul>
+{% endblock %}
+
+{% block content %}
+<h1>Student</h1>
+
+{% endblock %}
