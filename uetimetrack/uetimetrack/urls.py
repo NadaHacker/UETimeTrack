@@ -15,9 +15,17 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from project.views import ProjectSelect
 
 urlpatterns = [
+    path('', ProjectSelect.as_view(), name='project_select'),
     path('admin/', admin.site.urls),
-    path('', include('timetrack.urls')),
+    path('entry/', include('timeentry.urls')),
+    path('project/', include('project.urls')),
+    path('report/', include('report.urls')),
+    path('user/', include('user.urls')),
+]
+
+urlpatterns += [
     path('accounts/', include('django.contrib.auth.urls')),
 ]
